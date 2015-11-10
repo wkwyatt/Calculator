@@ -12,7 +12,7 @@
 		BF4A4E3A1BE1822D005341C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4A4E381BE1822D005341C4 /* Main.storyboard */; };
 		BF4A4E3C1BE1822D005341C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4A4E3B1BE1822D005341C4 /* Assets.xcassets */; };
 		BF4A4E3F1BE1822D005341C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4A4E3D1BE1822D005341C4 /* LaunchScreen.storyboard */; };
-		BF4A4E471BE184E1005341C4 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4A4E461BE184E1005341C4 /* Engine.swift */; settings = {ASSET_TAGS = (); }; };
+		C551F7DB1BE85741006965DF /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551F7DA1BE85741006965DF /* Engine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		BF4A4E3B1BE1822D005341C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4A4E3E1BE1822D005341C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF4A4E401BE1822D005341C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF4A4E461BE184E1005341C4 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		C551F7DA1BE85741006965DF /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		BF4A4E331BE1822D005341C4 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				BF4A4E461BE184E1005341C4 /* Engine.swift */,
 				BF4A4E341BE1822D005341C4 /* AppDelegate.swift */,
+				C551F7DA1BE85741006965DF /* Engine.swift */,
 				BF4A4E361BE1822D005341C4 /* ViewController.swift */,
 				BF4A4E381BE1822D005341C4 /* Main.storyboard */,
 				BF4A4E3B1BE1822D005341C4 /* Assets.xcassets */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4A4E371BE1822D005341C4 /* ViewController.swift in Sources */,
-				BF4A4E471BE184E1005341C4 /* Engine.swift in Sources */,
+				C551F7DB1BE85741006965DF /* Engine.swift in Sources */,
 				BF4A4E351BE1822D005341C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +287,7 @@
 				BF4A4E451BE1822D005341C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

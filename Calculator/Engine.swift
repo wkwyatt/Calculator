@@ -61,25 +61,16 @@ class Engine {
     }
     
     ///You will have to complete the other functions present
-    ///in the enumeration
+    ///in the enumeration in the processOperand function
     func addOperand(operand : CalculatorOperation) {
         
-        switch operand {
-        case .Add:
-            self.tempTotal = self.tempTotal + Float(self.displayTotal)!
-            break
-        case .Subtract:
-            let display = Float(self.displayTotal)!
-            if self.tempTotal > display {
-                
-                self.tempTotal = self.tempTotal - display
-            }
-            else {
-                self.tempTotal = display - self.tempTotal
-            }
-            break
-        default:
-            break
+        if let last = self.lastOperation {
+            
+            processOperand(last)
+        }
+        else {
+            
+            processOperand(operand)
         }
         
         self.lastOperation = operand
@@ -108,6 +99,17 @@ class Engine {
                 }
 
                 break
+            case .Divide:
+                
+                self.runningTotal = self.tempTotal / display
+                break
+            case .Multiply:
+                if self.tempTotal == 0 {
+                    
+                } else {
+                    self.runningTotal = self.tempTotal * Float(self.displayTotal)!
+                }
+                break
             default:
                 break
             }
@@ -134,5 +136,40 @@ class Engine {
     func clearDisplay() {
         
         self.displayTotal = self.displayZero
+    }
+    
+    //MARK:--- Private Functions ---
+    private func processOperand(operand: CalculatorOperation) {
+        
+        switch operand {
+        case .Add:
+            self.tempTotal = self.tempTotal + Float(self.displayTotal)!
+            break
+        case .Subtract:
+            let display = Float(self.displayTotal)
+            if self.tempTotal > display {
+                
+                self.tempTotal = self.tempTotal - display
+            }
+            else {
+                self.tempTotal = display - self.tempTotal
+            }
+            
+            break
+        case .Multiply:
+            if self.tempTotal == 0 {
+                self.tempTotal = Float(displayTotal)
+            } else {
+                self.tempTotal = self.tempTotal * Float(displayTotal)
+            }
+                break
+        case .Divide:
+            self.tempTotal = self.tempTotal / display
+            break
+        case .Percentage:
+            break
+            
+        }
+        
     }
 }

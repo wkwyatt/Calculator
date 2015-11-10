@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -39,31 +39,49 @@
                                 <rect key="frame" x="20" y="172" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Seven"/>
+                                <connections>
+                                    <action selector="sevenButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIo-t2-ON4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="whL-Kz-Qkf">
                                 <rect key="frame" x="90" y="172" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Eight"/>
+                                <connections>
+                                    <action selector="eightButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xw-Lq-dBa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qQ9-uw-1kB">
                                 <rect key="frame" x="160" y="172" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Nine"/>
+                                <connections>
+                                    <action selector="nineButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qbr-mT-6qY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JoA-bq-UON">
                                 <rect key="frame" x="20" y="242" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Four"/>
+                                <connections>
+                                    <action selector="fourButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P52-NV-99z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xgX-08-hIL">
                                 <rect key="frame" x="90" y="242" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Five"/>
+                                <connections>
+                                    <action selector="fiveButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8W-22-ySb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wnN-Mm-4fa">
                                 <rect key="frame" x="160" y="242" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Six"/>
+                                <connections>
+                                    <action selector="sixButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBP-ei-BJY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HQn-va-cAt">
                                 <rect key="frame" x="230" y="242" width="70" height="70"/>
@@ -82,11 +100,17 @@
                                 <rect key="frame" x="90" y="312" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Two"/>
+                                <connections>
+                                    <action selector="twoButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqc-4b-MWv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V1r-qX-Aet">
                                 <rect key="frame" x="160" y="312" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Three"/>
+                                <connections>
+                                    <action selector="threeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sv7-Q7-bTQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sPp-P7-e5c">
                                 <rect key="frame" x="230" y="312" width="70" height="70"/>
@@ -112,6 +136,43 @@
                                     <action selector="equalButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5b-Do-wif"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Dt-AP-gzO">
+                                <rect key="frame" x="160" y="102" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Percentage">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X4l-hD-wcK">
+                                <rect key="frame" x="230" y="172" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Divide">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="divideButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvH-A2-SJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tcC-bW-p75">
+                                <rect key="frame" x="230" y="102" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Multiply">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="multiplyButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPi-Gc-tiw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kLx-v9-s3O">
+                                <rect key="frame" x="160" y="382" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Decimal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decimalButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOx-A9-VLI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.50196078431372548" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -128,12 +189,16 @@
         <image name="Add" width="90" height="90"/>
         <image name="All Clear" width="90" height="90"/>
         <image name="Clear" width="90" height="90"/>
+        <image name="Decimal" width="90" height="90"/>
+        <image name="Divide" width="90" height="90"/>
         <image name="Eight" width="90" height="90"/>
         <image name="Equal" width="90" height="90"/>
         <image name="Five" width="90" height="90"/>
         <image name="Four" width="90" height="90"/>
+        <image name="Multiply" width="90" height="90"/>
         <image name="Nine" width="90" height="90"/>
         <image name="One" width="90" height="90"/>
+        <image name="Percentage" width="90" height="90"/>
         <image name="Seven" width="90" height="90"/>
         <image name="Six" width="90" height="90"/>
         <image name="Subtract" width="90" height="90"/>
@@ -141,4 +206,9 @@
         <image name="Two" width="90" height="90"/>
         <image name="Zero" width="180" height="90"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

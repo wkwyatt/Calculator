@@ -22,14 +22,21 @@ class ViewController: UIViewController, EngineDelegate {
 
     
     func engineTotalDidChange(updatedTotal: Float) {
-        self.displayLabel.text = String(updatedTotal)
+        self.displayLabel.text = String(stringInterpolationSegment: updatedTotal)
+    }
+    
+    @IBAction func multiplyButtonTouched(sender: AnyObject) {
+        self.engine?.addOperand(CalculatorOperation.Multiply)
     }
     
     @IBAction func addButtonTouched(sender: AnyObject) {
         
         self.engine?.addOperand(CalculatorOperation.Add)
     }
-    
+    @IBAction func divideButtonTouched(sender: AnyObject) {
+        self.engine?.addOperand(CalculatorOperation.Divide)
+        
+    }
     @IBAction func equalButtonTouched(sender: AnyObject) {
         
         self.engine?.equals()
@@ -45,6 +52,39 @@ class ViewController: UIViewController, EngineDelegate {
         self.engine?.addDigit(1)
     }
     
+    @IBAction func twoButtonTouched(sender: UIButton) {
+        
+        self.engine?.addDigit(2)
+    }
+    
+    @IBAction func threeButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(3)
+    }
+    
+    @IBAction func fourButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(4)
+    }
+    
+    @IBAction func fiveButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(5)
+    }
+    
+    @IBAction func sixButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(6)
+    }
+    
+    @IBAction func sevenButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(7)
+    }
+    
+    @IBAction func eightButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(8)
+    }
+    
+    @IBAction func nineButtonTouched(sender: AnyObject) {
+        self.engine?.addDigit(9)
+    }
+    
     @IBAction func clearButtonTouched(sender: AnyObject) {
         
         self.engine?.clearDisplay()
@@ -54,6 +94,10 @@ class ViewController: UIViewController, EngineDelegate {
         
         self.engine?.clearAll()
     }
+    @IBAction func decimalButtonTouched(sender: AnyObject) {
+//        self.engine?.
+    }
+
     
 }
 
